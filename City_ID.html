@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+
+	<title>Weather</title>
+
+	<!-- Loading third party fonts -->
+	<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+	<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="mime" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+	<!-- Loading main css file -->
+	<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+<body class="lat">
+
+	<div class="site-content">
+		<div class="site-header">
+			<div class="container">
+				<a href="index.html" class="branding">
+					<img src="images/logo.png" alt="" class="logo">
+					<div class="logo-type">
+						<h1 class="site-title">Weather Report</h1>
+						<small class="site-description">cloudy,sunny</small>
+					</div>
+				</a>
+
+				<!-- Default snippet for navigation -->
+				<div class="main-navigation">
+					<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+					<ul class="menu">
+						<li class="menu-item "><a href="project.html">Home</a></li>
+						<li class="menu-item"><a href="zip_code.html">ZIP CODE</a></li>
+						<li class="menu-item"><a href="City Weather.html">Search City </a></li>
+						<li class="menu-item current-menu-item"><a href="City_ID.html">City_ID</a></li>
+						<li class="menu-item"><a href="geo.html">Geo location</a></li>
+						<li class="menu-item "><a href="map.html">Map</a></li>
+
+					</ul>
+				</div>
+				<div class="clock" style="background-color:white; margin:10px; padding:0px;
+					border: 0;">
+					<div id="hours"></div>
+					<div id="minutes"></div>
+					<div id="seconds"></div>
+					<div class="three"></div>
+					<div class="six"></div>
+					<div class="nine"></div>
+					<div class="twelve"></div>
+					<div class="center"></div>
+				</div>
+				<div class="mobile-navigation"></div>
+
+			</div>
+		</div>
+		<br><br><br>
+		<div id="rowDiv3" style="margin-bottom:0px; color:white; background-color: #4aa1f3;">
+			<h2 class="blink" style="font-size:50px; font-size:60px; text-align: center;">Current Weather Report</h2>
+		</div>
+		<br><br><br>
+		<div class="container-fluid">
+			<div class="row" style="margin-bottom:20px;">
+				<span id="error"></span>
+			</div>
+
+
+			<div class="row form-group form-inline" id="rowDiv2">
+				<input type="text" name="lat" id="lat" class="form-conrol" placeholder="City_ID">
+				<button id="submitWeather2" class="btn btn-primary">City_ID</button>
+				<br><br><br>
+			</div>
+			<div id="show">
+
+			</div>
+		</div>
+		<br><br>
+		<footer class="site-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<form action="#" class="subscribe-form">
+							<input type="text" placeholder="Enter your email to .....">
+							<input type="submit" value="Send">
+						</form>
+					</div>
+					<br><br>
+					<div class="col-md-3 col-md-offset-1">
+						<div class="social-links">
+							<a href="https://www.facebook.com/RegionalWeatherForecast/"><i
+									class="fa fa-facebook"></i></a>
+							<a href="https://twitter.com/weatherchannel?lang=en"><i class="fa fa-twitter"></i></a>
+							<a
+								href="https://chrome.google.com/webstore/detail/weather/iolcbmjhmpdheggkocibajddahbeiglb?hl=en"><i
+									class="fa fa-google-plus"></i></a>
+							<a
+								href="https://in.pinterest.com/search/pins/?q=Weather%20forecast&rs=srs&source_id=2LStd4FB"><i
+									class="fa fa-pinterest"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+
+
+
+
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+		crossorigin="anonymous"></script>
+	<script src="clock.js"></script>
+	<script src="city_id.js"></script>
+</body>
+
+</html>

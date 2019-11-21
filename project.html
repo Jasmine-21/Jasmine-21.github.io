@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+
+    <title>Weather</title>
+
+    <!-- Loading third party fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+    <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Loading main css file -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body style="background-image: url('rainy.gif'); background-size:cover; background-repeat: no-repeat;">
+     
+    <div class="site-content">
+        <div class="site-header">
+            <div class="container">
+                <a href="index.html" class="branding">
+                    <img src="images/logo.png" alt="" class="logo">
+                    <div class="logo-type">
+                        <h1 class="site-title">Weather Report</h1>
+                        <small class="site-description">cloudy,sunny</small>
+                    </div>
+                </a>
+                <div class="main-navigation">
+                    <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+                    <ul class="menu">
+                        <li class="menu-item current-menu-item"><a href="project.html">Home</a></li>
+                        <li class="menu-item"><a href="zip_code.html">ZIP CODE</a></li>
+                        <li class="menu-item"><a href="City Weather.html">Search City </a></li>
+                        <li class="menu-item"><a href="City_ID.html">City_ID</a></li>
+                        <li class="menu-item"><a href="geo.html">Geo location</a></li>
+                        <li class="menu-item"><a href="map.html">map</a></li>
+                    </ul>
+                </div>
+                <div class="clock" style="background-color:white; margin:10px; padding:0px;
+                                        border: 0;">
+                    <div id="hours"></div>
+                    <div id="minutes"></div>
+                    <div id="seconds"></div>
+                    <div class="three"></div>
+                    <div class="six"></div>
+                    <div class="nine"></div>
+                    <div class="twelve"></div>
+                    <div class="center"></div>
+                </div>
+
+                <div class="mobile-navigation"></div>
+
+            </div>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br>
+
+            <!--forecast-->
+            <div class="forecast-table">
+                <div class="container">
+                    <div class="forecast-container">
+                        <div class="today forecast">
+                            <div class="forecast-header">
+                                <div class="day">Monday</div>
+                                <div class="date">22 Oct</div>
+                            </div> 
+                            <div class="forecast-content">
+                                <div class="location">New York</div>
+                                <div class="degree">
+                                    <div class="num">21<sup>o</sup>C</div>
+                                    <div class="forecast-icon">
+                                        <img src="C:\Users\HP\Desktop\API\Weather\weather\animated\cloudy-night-2.svg"
+                                            alt="" width=100>
+                                    </div>
+                                </div>
+                                <span><img src="images/icon-umberella.png" alt="">29%</span>
+                                <span><img src="images/icon-wind.png" alt="">18km/h</span>
+                                <span><img src="images/icon-compass.png" alt="">East</span>
+                            </div>
+                        </div>
+                        <div class="forecast">
+                            <div class="forecast-header">
+                                <div class="day">Tuesday</div>
+                            </div> <!-- .forecast-header -->
+                            <div class="forecast-content">
+                                <div class="forecast-icon">
+                                    <img src="C:\Users\HP\Desktop\API\Weather\weather\animated\cloudy-day-3.svg"
+                                        alt="23" width="85">
+                                </div>
+                                <div class="degree">25<sup>o</sup>C</div>
+                                <small>partly cloudy</small>
+                            </div>
+                        </div>
+                        <div class="forecast">
+                            <div class="forecast-header">
+                                <div class="day">Wednesday</div>
+                            </div> <!-- .forecast-header -->
+                            <div class="forecast-content">
+                                <div class="forecast-icon">
+                                    <img src="C:\Users\HP\Desktop\API\Weather\weather\animated\cloudy.svg" alt=""
+                                        width=85>
+                                </div>
+                                <div class="degree">23<sup>o</sup>C</div>
+                                <small>cloudy</small>
+                            </div>
+                        </div>
+                        <div class="forecast">
+                            <div class="forecast-header">
+                                <div class="day">Thursday</div>
+                            </div> <!-- .forecast-header -->
+                            <div class="forecast-content">
+                                <div class="forecast-icon">
+                                    <img src="C:\Users\HP\Desktop\API\Weather\weather\animated\snowy-1.svg" alt=""
+                                        width=85>
+                                </div>
+                                <div class="degree">27<sup>o</sup>C</div>
+                                <small>Snowy</small>
+                            </div>
+                        </div>
+                        <div class="forecast">
+                            <div class="forecast-header">
+                                <div class="day">Friday</div>
+                            </div> <!-- .forecast-header -->
+                            <div class="forecast-content">
+                                <div class="forecast-icon">
+                                    <img src="C:\Users\HP\Desktop\API\Weather\weather\animated\rainy-5.svg" alt=""
+                                        width=75>
+                                </div>
+                                <div class="degree">28<sup>o</sup>C</div>
+                                <small>Rainy</small>
+                            </div>
+                        </div>
+                        <div class="forecast">
+                            <div class="forecast-header">
+                                <div class="day">Saturday</div>
+                            </div> <!-- .forecast-header -->
+                            <div class="forecast-content">
+                                <div class="forecast-icon">
+                                    <img src="C:\Users\HP\Desktop\API\Weather\weather\animated\thunder.svg" alt=""
+                                        width=70>
+                                </div>
+                                <div class="degree">24<sup>o</sup>C</div>
+                                <small>thunder</small>
+                            </div>
+                        </div>
+                        <div class="forecast">
+                            <div class="forecast-header">
+                                <div class="day">Sunday</div>
+                            </div> <!-- .forecast-header -->
+                            <div class="forecast-content">
+                                <div class="forecast-icon">
+                                    <img src="C:\Users\HP\Desktop\API\Weather\weather\animated\weather.svg" alt=""
+                                        width=75>
+                                </div>
+                                <div class="degree">29<sup>o</sup>C</div>
+                                <small>sunny</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="site-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <form action="#" class="subscribe-form">
+                                <input type="text" placeholder="Enter your email to .">
+                                <input type="submit" value="Send">
+                            </form>
+                        </div>
+                        <br><br>
+                        <div class="col-md-3 col-md-offset-1">
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/RegionalWeatherForecast/"><i
+                                        class="fa fa-facebook"></i></a>
+                                <a href="https://twitter.com/weatherchannel?lang=en"><i class="fa fa-twitter"></i></a>
+                                <a
+                                    href="https://chrome.google.com/webstore/detail/weather/iolcbmjhmpdheggkocibajddahbeiglb?hl=en"><i
+                                        class="fa fa-google-plus"></i></a>
+                                <a
+                                    href="https://in.pinterest.com/search/pins/?q=Weather%20forecast&rs=srs&source_id=2LStd4FB"><i
+                                        class="fa fa-pinterest"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="clock.js"></script>
+</body>
+
+</html>

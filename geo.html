@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+
+	<title>Weather</title>
+
+	<!-- Loading third party fonts -->
+	<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+	<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Loading main css file -->
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<style>
+		h1,
+		h2 {
+			font-weight: 300;
+			font-family: "Avenir Next", Helevetica, sans-serif;
+			text-align: center;
+			margin: 0 auto;
+
+		}
+	</style>
+</head>
+
+
+<body style="background-image: url('geo.gif'); background-size:cover; background-repeat: no-repeat;"">
+		
+		<div class=" site-content">
+	<div class="site-header">
+		<div class="container">
+			<a href="index.html" class="branding">
+				<img src="images/logo.png" alt="" class="logo">
+				<div class="logo-type">
+					<h1 class="site-title">Weather Report</h1>
+					<small class="site-description">cloudy,sunny</small>
+				</div>
+			</a>
+
+			<!-- Default snippet for navigation -->
+			<div class="main-navigation">
+				<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+				<ul class="menu">
+					<li class="menu-item "><a href="project.html">Home</a></li>
+					<li class="menu-item"><a href="zip_code.html">ZIP CODE</a></li>
+					<li class="menu-item"><a href="City Weather.html">Search City </a></li>
+					<li class="menu-item"><a href="City_ID.html">City_ID</a></li>
+					<li class="menu-item current-menu-item"><a href="geo.html">Geo location</a></li>
+					<li class="menu-item "><a href="map.html">Map</a></li>
+				</ul> <!-- .menu -->
+			</div> <!-- .main-navigation -->
+			<div class="clock" style="background-color:white; margin:10px; padding:0px;
+					border: 0;">
+				<div id="hours"></div>
+				<div id="minutes"></div>
+				<div id="seconds"></div>
+				<div class="three"></div>
+				<div class="six"></div>
+				<div class="nine"></div>
+				<div class="twelve"></div>
+				<div class="center"></div>
+			</div>
+			<div class="mobile-navigation"></div>
+
+		</div>
+	</div>
+	<br><br><br>
+	<h1>
+		<div id="temp"></div>
+		<div id="minutely"></div>
+	</h1>
+
+	<br>
+	<br>
+
+
+	<h2>
+		<div id="location"></div>
+	</h2>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<footer class="site-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<form action="#" class="subscribe-form">
+						<input type="text" placeholder="Enter your email to .">
+						<input type="submit" value="Send">
+					</form>
+				</div>
+				<br><br>
+				<div class="col-md-3 col-md-offset-1">
+					<div class="social-links">
+						<a href="https://www.facebook.com/RegionalWeatherForecast/"><i class="fa fa-facebook"></i></a>
+						<a href="https://twitter.com/weatherchannel?lang=en"><i class="fa fa-twitter"></i></a>
+						<a
+							href="https://chrome.google.com/webstore/detail/weather/iolcbmjhmpdheggkocibajddahbeiglb?hl=en"><i
+								class="fa fa-google-plus"></i></a>
+						<a href="https://in.pinterest.com/search/pins/?q=Weather%20forecast&rs=srs&source_id=2LStd4FB"><i
+								class="fa fa-pinterest"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	</div>
+
+	<!--
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>-->
+	<script src="clock.js"></script>
+	<script src="geo.js"></script>
+</body>
+
+</html>
