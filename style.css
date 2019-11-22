@@ -30,16 +30,6 @@ body {
    background: #1e202b;
   
   }
- 
- h1, h2, h3, h4, h5, h6 {
-   font-weight: 700;
-   margin: 0 0 20px;
-   line-height: normal; }
- 
- hr {
-   border: none;
-   border-bottom: 1px solid #777; }
- 
  ul, ol {
    margin: 0;
    padding-left: 0; }
@@ -53,7 +43,7 @@ body {
  */
  p {
    margin-top: 0; }
- 
+ /*MAil*/
  form input, form textarea, form select {
    outline: none;
    border: none;
