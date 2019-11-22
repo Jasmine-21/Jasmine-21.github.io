@@ -1,4 +1,27 @@
- body {
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline; }
+
+button,
+input {
+  line-height: normal; }
+
+button,
+select {
+  text-transform: none; }
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+*, *:before, *:after 
+{
+  box-sizing: border-box;
+ }
+body {
    color: #bfc1c8;
    font-family: "Roboto", "Open Sans", sans-serif;
    font-size: 14px;
