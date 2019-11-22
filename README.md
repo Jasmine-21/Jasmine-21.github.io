@@ -1,11 +1,8 @@
-# jasmine-21.github.io
+# assessment-project
 
 # FRONTENED- WEATHER REPORT
-This project consist of 5 sub-pages i.e City_name,City_id,Zip_code,Geolocation and map.
-In City_name , input  cities and display the data of.weather forecast.
-In City_id  ,input city_id and display the data.
-In ZIP_code ,input zip_code and display the data.
-In Geolaction,dislay temo,longitude,latitude.
+
+This project tells about the weather report through City_name,City_id,Zip_code,Geolocation.
 
 # Technologies USED:-
 - HTML
