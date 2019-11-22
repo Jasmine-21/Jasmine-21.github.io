@@ -6,11 +6,11 @@ This project tells about the weather report through City_name,City_id,Zip_code,G
 
 # Technologies USED:-
 - HTML
--CSS
--JAVASCRIPT
--BOOTSTRAP
--JQUERY
--AJAX
+- CSS
+- JAVASCRIPT
+- BOOTSTRAP
+- JQUERY
+- AJAX
 
 ## List of API USED
 
