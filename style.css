@@ -398,7 +398,7 @@ input[type="text"]
 }
 .city
 {
-    background-image: url("searchcity.jpg");
+    background-image: url("weather.jpg");
     background-repeat:no-repeat;
     background-size: cover;
 }
